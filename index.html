@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MangaFinder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+
+        <nav>
+            <div class="logo">
+                Manga<span>Finder</span>
+            </div>
+
+            <div class="nav-links">
+                <a href="#first">İlk Okunacaklar</a>
+                <a href="#genres">Türler</a>
+                <a href="#later">16+</a>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+
+            <p class="small-title">YOUR MANGA GUIDE</p>
+
+            <h1>
+                Bir sonraki<br>
+                <span>manganı bul.</span>
+            </h1>
+
+            <p class="description">
+                Sevdiğin türlere göre manga keşfet ve
+                okumaya nereden başlayacağını bul.
+            </p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Manga ara..."
+                >
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- İLK OKUNACAKLAR -->
+
+        <section id="first" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="small-title">BAŞLANGIÇ</p>
+                    <h2>⭐ İlk Okunacaklar</h2>
+                </div>
+
+                <p>
+                    Başlamak için seçtiğimiz mangalar.
+                </p>
+
+            </div>
+
+            <div
+                id="firstGrid"
+                class="manga-grid">
+            </div>
+
+        </section>
+
+
+        <!-- TÜRLER -->
+
+        <section id="genres" class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="small-title">KEŞFET</p>
+                    <h2>Türler</h2>
+                </div>
+
+            </div>
+
+
+            <div
+                id="genreButtons"
+                class="filters">
+            </div>
+
+
+            <div
+                id="mangaGrid"
+                class="manga-grid">
+            </div>
+
+        </section>
+
+
+        <!-- 16+ -->
+
+        <section id="later" class="section later-section">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="small-title">DAHA SONRA</p>
+
+                    <h2>
+                        🔴 16+ — İleride Okuyabilir
+                    </h2>
+                </div>
+
+                <p>
+                    Daha ağır içeriklere sahip seriler.
+                </p>
+
+            </div>
+
+
+            <div
+                id="laterGrid"
+                class="manga-grid">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MANGA DETAY PENCERESİ -->
+
+    <div
+        id="modal"
+        class="modal hidden">
+
+        <div class="modal-card">
+
+            <button
+                id="closeModal"
+                class="close">
+                ×
+            </button>
+
+            <div id="modalContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        MangaFinder · Kişisel manga öneri sitesi
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
